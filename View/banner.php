@@ -1,0 +1,1 @@
+<img src="ExiaStoreProjet/View/image/banner.png">

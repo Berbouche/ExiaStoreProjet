@@ -10,11 +10,11 @@
 	<body>
 
 		<header>
-		<?php include("banner.php"); ?>
+		<?php include("View/banner.php"); ?>
 		</header>
 
 		<footer>
-		<?php include("footer.php"); ?>
+		<?php include("View/footer.php"); ?>
 		</footer>
 
 	</body>
