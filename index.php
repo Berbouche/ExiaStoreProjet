@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-
-<html>
-
-	<head>
-		<meta charset="utf-8" />
-		<title>Exia Store</title>
-	</head>
-
-	<body>
-
-		<header>
-		<?php include("View/banner.php"); ?>
-		</header>
-
-		<footer>
-		<?php include("View/footer.php"); ?>
-		</footer>
-
-	</body>
-
-</html>
+<?php
+	include("View/beginPage.php");
+	include("View/endPage.php")
+?>
