@@ -10,3 +10,4 @@
 	<body>
 
 		<header><?php include("View/banner.php"); ?></header>
+	</body>
