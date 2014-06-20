@@ -1,1 +1,1 @@
-<img src="ExiaStoreProjet/View/image/banner.png">
+<img src="View/image/banner.png">
