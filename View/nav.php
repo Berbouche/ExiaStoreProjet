@@ -66,7 +66,6 @@
             <li><a href="#"><span class="glyphicon glyphicon-leaf"></span> connection</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-off"></span> deconnection</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-cog"></span> gestion</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-wrench"></span> administrator</a></li>
             <!-- <li class="divider"></li>
             <li><a href="#">Separated link</a></li> -->
           </ul>
