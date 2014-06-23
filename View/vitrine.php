@@ -5,7 +5,12 @@
       <div class="caption">
         <h3>So much CDs</h3>
         <p>35 €</p>
-        <p><a href="#" class="btn btn-primary" role="button">Add to my ShopingCart</a> <a href="#" class="btn btn-default" role="button">More Info</a></p>
+        <p>
+
+        <a href="#" class="btn btn-primary" role="button">Add to my ShopingCart</a>
+        <a id="info" href="#" class="btn btn-default" role="button">More Info</a>
+        </p>
+
       </div>
     </div>
   </div>
@@ -14,3 +19,4 @@
 <?php
 	include ("Controller/catalog.php");
 ?>
+
