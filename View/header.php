@@ -16,7 +16,6 @@
 		?>
 		<script type="text/javascript" src="View/js/jquery.min.js"></script>
 		<script type="text/javascript" src="View/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="View/js/bubulle.min.js"></script>
 		<script type="text/javascript" src="View/js/actions.js"></script>
 	</head>
 
