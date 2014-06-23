@@ -53,7 +53,7 @@
        <label for="email">Your e-mail </label>
        <input type="email" name="email" id="email" />
        <br>
-       <br />
+       <br /> 
        
        
        &nbsp;<input type="submit" value="Send" class="auto-style1" style="width: 90px" /></form>
