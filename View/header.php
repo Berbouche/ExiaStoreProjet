@@ -35,22 +35,22 @@
                     <button type="submit" value="Valide">OK</button>
                 
 				</p>
-				<label for="nom"><br><br>Quel est votre nom ?</label>
+				<label for="nom"><br><br>Your Lastname </label>
        <input type="text" name="nom" id="nom" />
        <br>
        <br />
 
-       <label for="prenom">Quel est votre prénom ?</label>
+       <label for="prenom">Your Firstname </label>
        <input type="text" name="prenom" id="prenom" />
        <br>
        <br />
        
-       <label for="pass">Votre mot de passe :</label>
+       <label for="pass">Your Password:</label>
        <input type="password" name="pass" id="pass" />
        <br>
        <br />
  
-       <label for="email">Quel est votre e-mail ?</label>
+       <label for="email">Your e-mail </label>
        <input type="email" name="email" id="email" />
        <br>
        <br />
