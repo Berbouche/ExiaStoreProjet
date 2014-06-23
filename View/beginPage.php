@@ -15,4 +15,5 @@
 
 		<header><?php include("View/banner.php"); ?></header>
 		<nav><?php include("View/nav.php") ?></nav>
-
+		<?
+	
