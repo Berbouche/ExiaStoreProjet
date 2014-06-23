@@ -38,7 +38,7 @@
 				<label for="nom"><br><br>Your Lastname </label>
        <input type="text" name="nom" id="nom" />
        <br>
-       <br />
+       <br /> 
 
        <label for="prenom">Your Firstname </label>
        <input type="text" name="prenom" id="prenom" />
