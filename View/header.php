@@ -21,3 +21,15 @@
 
 		<header><?php include("View/banner.php"); ?></header>
 		<nav><?php include("View/nav.php") ?></nav>
+        
+            <form method="post" action="">
+                <p>
+                    <label for="email">Your e-mail :</label>
+                    <input type="email" name="email" id="email"/>
+                    
+                    <label for="password">Your password :</label>
+                    <input type="password" name="password" id="password"/>
+                    
+                    <button type="submit" value="Valide">OK</button>
+                </p>
+            </form>
