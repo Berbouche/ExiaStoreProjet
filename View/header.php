@@ -46,7 +46,7 @@
        <br>
        <br />
        
-       <label for="pass">Votre mot de passe :</label>
+       <label for="password">Votre mot de passe :</label>
        <input type="password" name="pass" id="pass" />
        <br>
        <br />
@@ -55,6 +55,11 @@
        <input type="email" name="email" id="email" />
        <br>
        <br />
+        
+        <label for="date">Quel est votre date d'anniversaire ?</label>
+        <input type="date" name="birthday" id="birthday"/>
+        <br>
+        <br />
        
        
        &nbsp;<input type="submit" value="Send" class="auto-style1" style="width: 90px" /></form>
