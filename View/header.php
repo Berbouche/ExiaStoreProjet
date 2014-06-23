@@ -31,5 +31,30 @@
                     <input type="password" name="password" id="password"/>
                     
                     <button type="submit" value="Valide">OK</button>
-                </p>
+                
+				</p>
+				<label for="nom"><br><br>Quel est votre nom ?</label>
+       <input type="text" name="nom" id="nom" />
+       <br>
+       <br />
+
+       <label for="prenom">Quel est votre prénom ?</label>
+       <input type="text" name="prenom" id="prenom" />
+       <br>
+       <br />
+       
+       <label for="pass">Votre mot de passe :</label>
+       <input type="password" name="pass" id="pass" />
+       <br>
+       <br />
+ 
+       <label for="email">Quel est votre e-mail ?</label>
+       <input type="email" name="email" id="email" />
+       <br>
+       <br />
+       
+       
+       &nbsp;<input type="submit" value="Send" class="auto-style1" style="width: 90px" /></form>
+				
+				
             </form>
