@@ -6,8 +6,6 @@
 			include ("Controller/admin.php");
 		}
 	}
-
-
 	include("View/vitrine.php");
 	include("View/footer.php");
 ?>
