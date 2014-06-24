@@ -6,6 +6,33 @@
 			include ("Model/admin.php");
 		}
 	}
+	if (isset($_GET['log'])) {
+		switch ($_GET['log']) {
+			case 'yes':
+			echo '<ul class="list-group"><li class="list-group-item list-group-item-success">You are now logged</li></ul>';
+				break;
+			case 'yes2':
+			echo '<ul class="list-group"><li class="list-group-item list-group-item-success">You are now registered</li></ul>';
+				break;
+			case 'no':
+			echo '<ul class="list-group"><li class="list-group-item list-group-item-info">You need to be logged</li></ul>';
+				break;
+			case 'exit':
+			echo '<ul class="list-group"><li class="list-group-item list-group-item-success">You are now log out</li></ul>';
+				break;
+			case 'fail':
+			echo '<ul class="list-group"><li class="list-group-item list-group-item-danger">OOOoooops! log in fail...</li></ul>';
+				break;
+			default:
+				echo "<script>alert('Error : ".$_GET['log']."')</script>";
+				break;
+		}
+
+		if ($_GET['log']=="yes") {
+		}elseif ($_GET['log']=="no") {
+		}elseif ($_GET['log']=="exit"){
+		}
+	}
 	// $link = "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; $escaped_link = htmlspecialchars($link, ENT_QUOTES, 'UTF-8'); echo '<a href="'.$escaped_link.'">'.$escaped_link.'</a>';
 	if (isset($_GET['page'])) {
 		//print_r($_GET['page']);

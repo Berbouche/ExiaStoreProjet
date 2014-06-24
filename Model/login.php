@@ -16,17 +16,16 @@
              $d= mysql_fetch_assoc($r);
              
     //verif MDP est correct
-            ?><script>alert("<?php echo($email." ".$password."</br>".$d['password']); ?>");</script><?php
+            /*?><script>alert("<?php echo($email." ".$password."</br>".$d['password']); ?>");</script><?php*/
              if ($d['password'] == ($password))
              {
                  $_SESSION['email']=$email;
                  $_SESSION['password']=$password;
-                 echo '<p>Welcome, you are connected !</p>';
-                 header('location: http://localhost/ExiaStoreProjet');
+                 header('Location: http://localhost/ExiaStoreProjet/?log=yes');
              }
              else
              {
-                 echo "Sorry connection failed";
+                 header('Location: http://localhost/ExiaStoreProjet/?log=fail');
              }
            }
         
@@ -36,10 +35,8 @@
         die('Erreur : '.$e->getMessage()); 
     }
 ?>
-
-<?php        
+<?php /*        
 session_start();  
 //session_destroy sert à detruire la session  
 session_destroy();  
-echo" Vous êtes  déconnecté";    
-?>      
+echo" Vous êtes  déconnecté";*/?>
