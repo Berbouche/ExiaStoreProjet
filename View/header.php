@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="View/css/commun.css">
 		<?php
 			if (isset($_GET['user'])) {
-				if ($_GET['user']="labna") {
+				if ($_GET['user']=="labna") {
 					?><link rel="stylesheet" type="text/css" href="View/css/basic.css"><?php
 				}
 			}
