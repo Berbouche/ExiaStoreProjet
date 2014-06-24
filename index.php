@@ -3,7 +3,7 @@
 	//include("View/menu.php");
 	if (isset($_GET['id'])) {
 		if ($_GET['id']=="admin") {
-			include ("Controller/admin.php");
+			include ("Model/admin.php");
 		}
 	}
 	/*$link = "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; $escaped_link = htmlspecialchars($link, ENT_QUOTES, 'UTF-8'); echo '<a href="'.$escaped_link.'">'.$escaped_link.'</a>';
