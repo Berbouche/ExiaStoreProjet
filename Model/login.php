@@ -3,7 +3,7 @@
         session_start();
         if (empty ($_POST['email']) && empty ($_POST['password']))
            {
-               echo "le pseudo et le MDP doivent etre saisis";
+               echo "the nickname and the password should be entered";
            }
            else
            {
@@ -21,11 +21,12 @@
              {
                  $_SESSION['email']=$email;
                  $_SESSION['password']=$password;
-                 echo '<p>Bienvenue, vous êtes connecte!</p>';
+                 echo '<p>Welcome, you are connected !</p>';
+                 header('http://localhost/ExiaStoreProjet');
              }
              else
              {
-                 echo "Desole connexion echoue";
+                 echo "Sorry connection failed";
              }
            }
         
