@@ -44,8 +44,6 @@
 
 
 	include("View/sale.php");
-
-	include("View/vitrine.php");
 	}
 	include("View/footer.php");
 
