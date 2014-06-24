@@ -15,17 +15,23 @@
 				break;
 			
 			case 'catalog' :
+				?>
+				<script type="text/javascript">
+					document.getElementById('catalog').classList.add("active");
+				</script>
+				<?php
 				include("View/catalogTest.php");
+				break;
+
+			case 'cart':
+				?><script type="text/javascript">document.getElementById('shoppingCart').classList.add('active');</script><?php
+				include("View/shoppingCart.php");
 				break;
 
 			default:
 				include("View/vitrine.php");
 				break;
 		}
-
-
-
-
 		/*if ($_GET['page']=="register") {
 			include("View/register.php");
 		}*/
