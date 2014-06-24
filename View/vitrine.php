@@ -23,6 +23,10 @@
         <p>
 
         <a href="#" class="btn btn-primary" role="button">Add to my ShopingCart</a>
+        <a id="info" onclick="javascript:show_hide('info');" class="btn btn-default" role="button">More Info</a>
+        <div id="info" class="info">
+        info of cd cd cd plin plin  plin 2 cd !!!
+        </div>
         </p>
 
       </div>
@@ -55,6 +59,10 @@
         <p>
 
         <a href="#" class="btn btn-primary" role="button">Add to my ShopingCart</a>
+        <a id="info" onclick="javascript:show_hide('info');" class="btn btn-default" role="button">More Info</a>
+        <div id="info" class="info">
+        info of cd cd cd plin plin  plin 2 cd !!!
+        </div>
         </p>
 
       </div>
@@ -86,6 +94,10 @@
         <p>
 
         <a href="#" class="btn btn-primary" role="button">Add to my ShopingCart</a>
+        <a id="info" onclick="javascript:show_hide('info');" class="btn btn-default" role="button">More Info</a>
+        <div id="info" class="info">
+        info of cd cd cd plin plin  plin 2 cd !!!
+        </div>
         </p>
 
       </div>
