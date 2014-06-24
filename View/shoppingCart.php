@@ -1,6 +1,8 @@
-<?php
 
+<script type="text/javascript">
 session start();
+</script>
+<?php
 include_once("ShoppingCartFunctions.php");
 $erreur = false;
 
@@ -68,7 +70,7 @@ echo '<table style="width: 400px">
 		<td>Quantité</td>
 		<td>Prix Unitaire</td>
 		<td>Action</td>
-	</tr>'
+	</tr>';
 	
 	if (creationPanier())
 	{

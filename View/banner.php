@@ -1,1 +1,1 @@
-<img src="View/image/banner.png">
+<img src="View/image/banner.png" width="100%" max-height="100px">
