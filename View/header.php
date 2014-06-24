@@ -24,7 +24,7 @@
 		<header><?php include("View/banner.php"); ?></header>
 		<nav><?php include("View/nav.php") ?></nav>
         
-            <form id="formLog" method="post" action="">
+            <form id="formLog" method="post" action="register.php">
                 <p>
                     <label for="email">Your e-mail :</label>
                     <input type="email" name="email" id="email"/>
