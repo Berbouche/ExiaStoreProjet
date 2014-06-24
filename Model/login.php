@@ -1,32 +1,35 @@
 <?php
     try{
-       $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;		
-		$bdd = new PDO('mysql:host=localhost;dbname=projetweb','root','',$pdo_options);
+        session_start();
+        if (empty ($_POST['email']) && empty ($_POST['password']))
+           {
+               echo "le pseudo et le MDP doivent etre saisis";
+           }
+           else
+           {
+             mysql_connect("localhost","root","");
+             mysql_select_db("projetweb");
+             $email = $_POST['email'];
+             $password = $_POST['password'];
+             $r = mysql_query('SELECT password, email FROM member WHERE email = "'.$email.'"')
+             or die (mysql_error());
+             $d= mysql_fetch_assoc($r);
+             
+    //verif MDP est correct
+            ?><script>alert("<?php echo($email." ".$password."</br>".$d['password']); ?>");</script><?php
+             if ($d['password'] == ($password))
+             {
+                 $_SESSION['email']=$email;
+                 $_SESSION['password']=$password;
+                 echo '<p>Bienvenue, vous êtes connecte!</p>';
+             }
+             else
+             {
+                 echo "Desole connexion echoue";
+             }
+           }
         
-        if(isset($_POST) && !empty($_POST['EMAIL']) && !empty($_POST['PASSWORD'])){
-            extract($_POST);
-            
-            $table ="member";
-            $sql = "SELECT PASSWORD FROM" .$table."WHERE EMAIL='".$EMAIL."'";
-            $req = mysql_query($sql) or die('SQL Error!<br>'.$sql.'<br>'.mysql_error());
-            $data = mysql_fetch_assoc($req);
-            
-            if($data['PASSWORD'] != $PASSWORD){
-                echo '<p>Bad login / password. Thank you again for</p>';
-                exit;
-            }
-            else {
-                session_start();
-                $_SESSION['EMAIL'] = $EMAIL;
-                echo 'You are connecting';
-                
-        //inclure un retour à la page d'accueil
-            }
-        }
-        else {
-            echo '<p>You forgot to fill in a field.</p>';
-            exit;
-        }
+        
             
         } catch (PDOException $e){
         die('Erreur : '.$e->getMessage()); 
