@@ -8,10 +8,27 @@
         <p>
 
         <a href="#" class="btn btn-primary" role="button">Add to my ShopingCart</a>
-        <a id="info" onclick="javascript:show_hide('info');" class="btn btn-default" role="button">More Info</a>
-        <div id="info" class="info">
-        info of cd cd cd plin plin  plin 2 cd !!!
-        </div>
+        
+
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          More Info
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+       This is much CD for you for sale. ONLY 199.99$ !
+      </div>
+    </div>
+  </div>
+</div>
+
+
         </p>
 
       </div>
