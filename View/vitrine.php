@@ -20,6 +20,6 @@
 </div>
 
 <?php
-	include ("Controller/catalog.php");
+	include ("Model/catalog.php");
 ?>
 
