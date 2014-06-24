@@ -16,8 +16,8 @@
               <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
 			  Catalog <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">CDs</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="">DVDs</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="">CD</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="">DVD</a></li>
                 <li role="presentation" class="divider"></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="">Other goodies</a></li>
               </ul>
