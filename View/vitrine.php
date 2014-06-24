@@ -1,6 +1,4 @@
-       
-
 <?php
-	include ("Model/catalog.php");
+	//include ("Model/catalog.php");
 ?>
 
