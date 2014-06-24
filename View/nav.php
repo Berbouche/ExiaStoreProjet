@@ -13,7 +13,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li id="shoppingCart"><a href="?page=cart"><span class="glyphicon glyphicon-shopping-cart">Cart</span></a></li>
-        <li id="catalog"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>Catalog</a></li>
+        <li id="catalog"><a href="?page=catalog"><span class="glyphicon glyphicon-list-alt"></span>Catalog</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
