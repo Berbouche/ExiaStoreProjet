@@ -15,12 +15,12 @@ try {
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#<?php echo (utf8_encode($line['ID'])) ?>">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo (utf8_encode($line['ID'])) ?>">
           <?php echo (utf8_encode($line['NAME'])) ?>
         </a>
       </h4>
     </div>
-    <div id="<?php echo (utf8_encode($line['ID'])) ?>" class="panel-collapse collapse in">
+    <div id="collapse<?php echo (utf8_encode($line['ID'])) ?>" class="panel-collapse collapse in">
       <div class="panel-body">
 
 
@@ -90,4 +90,4 @@ try {
     die('Erreur : '.$e->getMessage());
   }
 
-  ?>
+  ?> 
