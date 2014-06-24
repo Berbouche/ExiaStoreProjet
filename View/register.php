@@ -1,9 +1,9 @@
 <?php?>    
-<form id="formRegister" method="post" action="">
+<form id="formRegister" method="post" action="Model/register.php">
 	<label for="nom"><br><br>Your Lastname :</label>
-    <input type="text" name="nom" id="nom" /><br/><br/>
-    <label for="prenom">Your Firstname :</label>
-    <input type="text" name="prenom" id="prenom" /><br/><br/>
+    <input type="text" name="lastname" id="nom" /><br/><br/>
+    <label for="firstname">Your Firstname :</label>
+    <input type="text" name="firtname" id="firstname" /><br/><br/>
     <label for="pass">Your Password :</label>
     <input type="password" name="pass" id="pass" /><br><br />
     <label for="email">Your e-mail :</label>
