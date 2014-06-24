@@ -30,8 +30,8 @@ try {
     <div class="thumbnail">
       <img src="View/image/compile.jpg" alt="compile">
       <div class="caption">
-        <h6><?php echo (utf8_encode($line['ARTIST_REALISATOR'])) ?> </h6>
-        <p><?php echo (utf8_encode($line['PRICEHT'])) ?> $</p>
+        <h4>Artist : <?php echo (utf8_encode($line['ARTIST_REALISATOR'])) ?> </h4>
+        <p>Price : <?php echo (utf8_encode($line['PRICEHT'])) ?> $</p>
         <p>
 
         <a href="#" class="btn btn-primary" role="button">Add to my ShopingCart</a>
