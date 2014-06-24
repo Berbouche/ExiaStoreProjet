@@ -1,5 +1,5 @@
 <?php?>    
-<form id="formRegister" method="post" action="">
+<form id="formRegister" method="post" action="register.php">
 	<label for="nom"><br><br>Your Lastname :</label>
     <input type="text" name="nom" id="nom" /><br/><br/>
     <label for="prenom">Your Firstname :</label>
