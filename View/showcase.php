@@ -2,6 +2,8 @@
 <!-- Debut de balise 0 -->
 
 <div class="panel-group" id="accordion">
+
+
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -109,6 +111,9 @@
       </div>
     </div>
   </div>
+
+  
 </div>
+
 
 <!-- Fin de balise 0 -->

@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Ven 20 Juin 2014 à 14:32
+-- Généré le: Mar 24 Juin 2014 à 08:16
 -- Version du serveur: 5.6.12-log
--- Version de PHP: 5.4.16
+-- Version de PHP: 5.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -199,25 +199,26 @@ INSERT INTO `kindarticle` (`IDKINDARTICLE`, `KINDS`) VALUES
 
 CREATE TABLE IF NOT EXISTS `member` (
   `IDMEMBER` int(11) NOT NULL AUTO_INCREMENT,
-  `IDAUTORIZATION` int(11) NOT NULL,
+  `IDAUTORIZATION` int(11) NOT NULL DEFAULT '2',
   `LASTNAME` longtext,
   `FIRSTNAME` longtext,
   `PASSWORD` longtext,
   `EMAIL` longtext,
-  `BIRTHDAY` datetime DEFAULT NULL,
+  `BIRTHDAY` date DEFAULT NULL,
   PRIMARY KEY (`IDMEMBER`),
   KEY `FK_MEMBER_ABILITIES_AUTORIZA` (`IDAUTORIZATION`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
 
 --
 -- Contenu de la table `member`
 --
 
 INSERT INTO `member` (`IDMEMBER`, `IDAUTORIZATION`, `LASTNAME`, `FIRSTNAME`, `PASSWORD`, `EMAIL`, `BIRTHDAY`) VALUES
-(1, 1, 'Boon', 'Mathieu', 'cesiexia', 'mathieu.boon@yahoo.fr', '1985-05-18 00:00:00'),
-(2, 2, 'Toto', 'Titi', 'informatique', 'toto.titi@yahoo.fr', '1975-12-20 00:00:00'),
-(3, 2, 'tata', 'pauline', 'cours1', 'pauline.tata@yahoo.fr', '1995-12-25 00:00:00'),
-(4, 1, 'voiture', 'manu', 'blanquefort', 'manu.voiture@yahoo.fr', '1989-01-07 00:00:00');
+(1, 1, 'Boon', 'Mathieu', 'cesiexia', 'mathieu.boon@yahoo.fr', '1985-05-18'),
+(2, 2, 'Toto', 'Titi', 'informatique', 'toto.titi@yahoo.fr', '1975-12-20'),
+(3, 2, 'tata', 'pauline', 'cours1', 'pauline.tata@yahoo.fr', '1995-12-25'),
+(4, 1, 'voiture', 'manu', 'blanquefort', 'manu.voiture@yahoo.fr', '1989-01-07'),
+(17, 2, 'foufou', 'gerome', 'coucou', 'nana@hein.ko', '2014-06-24');
 
 -- --------------------------------------------------------
 
@@ -330,15 +331,15 @@ ALTER TABLE `article`
 -- Contraintes pour la table `become`
 --
 ALTER TABLE `become`
-  ADD CONSTRAINT `FK_BECOME_BECOME_ARTICLE` FOREIGN KEY (`ID`) REFERENCES `article` (`ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `FK_BECOME_BECOME2_ORDER` FOREIGN KEY (`IDORDER`) REFERENCES `order` (`IDORDER`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `FK_BECOME_BECOME2_ORDER` FOREIGN KEY (`IDORDER`) REFERENCES `order` (`IDORDER`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `FK_BECOME_BECOME_ARTICLE` FOREIGN KEY (`ID`) REFERENCES `article` (`ID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Contraintes pour la table `have`
 --
 ALTER TABLE `have`
-  ADD CONSTRAINT `FK_HAVE_HAVE_MEMBER` FOREIGN KEY (`IDMEMBER`) REFERENCES `member` (`IDMEMBER`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `FK_HAVE_HAVE2_ADDRESS` FOREIGN KEY (`IDADRESS`) REFERENCES `address` (`IDADDRESS`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `FK_HAVE_HAVE2_ADDRESS` FOREIGN KEY (`IDADRESS`) REFERENCES `address` (`IDADDRESS`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `FK_HAVE_HAVE_MEMBER` FOREIGN KEY (`IDMEMBER`) REFERENCES `member` (`IDMEMBER`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Contraintes pour la table `member`
