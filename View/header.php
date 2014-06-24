@@ -33,8 +33,11 @@
                     <input type="password" name="password" id="password"/>
                     
                     <button type="submit" value="Valide">OK</button>
-                
+                <br>
+                <br />
 				</p>
+                
+                <h3><p>if you do not have an account, please register below...</p></h3>
 				<label for="nom"><br><br>Quel est votre nom ?</label>
        <input type="text" name="nom" id="nom" />
        <br>
