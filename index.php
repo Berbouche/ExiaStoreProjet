@@ -13,7 +13,9 @@
 			case 'register':
 				include("View/register.php");
 				break;
-			
+			case 'cart':
+				include("View/shoppingCart.php");
+				break;
 			default:
 				# code...
 				break;

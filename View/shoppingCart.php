@@ -1,6 +1,5 @@
 <?php
-
-session start();
+//session start();
 include_once("ShoppingCartFunctions.php");
 $erreur = false;
 
@@ -59,18 +58,9 @@ if (!$erreur){
 
 
 
-echo '<?xml version="1.0" encoding="utf-8"?>
+echo '<?xml version="1.0" encoding="utf-8"?>';
+?>
 
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Your shopping cart</title>
-</head>
-
-<body>
 
 <form method="post" action="panier.php">
 <table style="width: 400px">
@@ -84,9 +74,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>
 		<td>Action</td>
 	</tr>
 
-
 	<?php
-	
 	if (creationPanier())
 	{
 	   $nbArticles=count($_SESSION['panier']['libelleProduit']);
@@ -120,6 +108,6 @@ echo '<?xml version="1.0" encoding="utf-8"?>
 	?>
 </table>
 </form>
-</body>
 
-</html>
+
+

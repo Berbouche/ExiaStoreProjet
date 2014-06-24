@@ -1,6 +1,6 @@
 <?php
 
-@return booleen
+return $booleen;
 
 function creationPanier(){
    if (!isset($_SESSION['panier'])){
@@ -13,10 +13,10 @@ function creationPanier(){
    return true;
 }
 
-@param string $libelleProduit
-@param int $qteProduit
-@param float $prixProduit
-@return void
+//@param string $libelleProduit;
+//@param int $qteProduit
+//@param float $prixProduit
+//@return void
 
 function ajouterArticle($libelleProduit,$qteProduit,$prixProduit)
 
