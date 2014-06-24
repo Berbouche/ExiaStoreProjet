@@ -136,30 +136,10 @@ function compterArticles()
 
 {
 if (isset ($_SESSION['panier']))
-return count($_SESSION['panier'][libelleProduit']);
+return count($_SESSION['panier']['libelleProduit']);
 else
 return 0;
 }
 
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

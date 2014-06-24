@@ -21,13 +21,13 @@
 	<body>
 		<header><?php include("View/banner.php"); ?></header>
 		<nav><?php include("View/nav.php") ?></nav>
-    <form id="formLog" method="post" action="">
+    <form id="formLog" method="post" action="Model/login.php">
       <p>
-      	<a href="?page=register">Not yet register</a>
         <label for="email">Your e-mail :</label>
         <input type="email" name="email" id="email"/>
         <label for="password">Your password :</label>
         <input type="password" name="password" id="password"/>
         <button type="submit" value="Valide">OK</button>
+        <a href="?page=register">Not yet register</a>
       </p>
     </form>

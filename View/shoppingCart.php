@@ -1,5 +1,8 @@
+
+<script type="text/javascript">
+session start();
+</script>
 <?php
-//session start();
 include_once("ShoppingCartFunctions.php");
 $erreur = false;
 
@@ -57,13 +60,7 @@ if (!$erreur){
 }
 
 
-
-echo '<?xml version="1.0" encoding="utf-8"?>';
-?>
-
-
-<form method="post" action="panier.php">
-<table style="width: 400px">
+echo '<table style="width: 400px">
 	<tr>
 		<td colspan="4" style="height: 24px">Votre panier</td>
 	</tr>
@@ -72,7 +69,9 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 		<td>Quantité</td>
 		<td>Prix Unitaire</td>
 		<td>Action</td>
+
 	</tr>
+	</table>';
 
 	<?php
 	if (creationPanier())
@@ -92,22 +91,20 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 	         echo "</tr>";
 	      }
 
-	      echo "<tr><td colspan=\"2\"> </td>";
-	      echo "<td colspan=\"2\">";
+	      echo '<tr><td colspan=\"2\"> </td>';
+	      echo '<td colspan=\"2\">';
 	      echo "Total : ".MontantGlobal();
-	      echo "</td></tr>";
+	      echo '</td></tr>';
 
-	      echo "<tr><td colspan=\"4\">";
-	      echo "<input type=\"submit\" value=\"Rafraichir\"/>";
-	      echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
+	      echo '<tr><td colspan="4">';
+	      echo '<input type="submit" value="Rafraichir"/>';
+	      echo '<input type="hidden" name="action" value="refresh"/>';
 
 	      echo "</td></tr>";
 	   }
 	}
 	
 	?>
-</table>
-</form>
 
 
 

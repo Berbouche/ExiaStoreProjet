@@ -4,13 +4,13 @@ function logintest(){
 
 function show_hide(id)
 {
-    if(document.getElementById(id).style.visibility=="hidden")
+    if(document.getElementById(id).style.display=="none")
     {
-        document.getElementById(id).style.visibility="visible";
+        document.getElementById(id).style.display="block";
     }
     else
     {
-        document.getElementById(id).style.visibility="hidden";
+        document.getElementById(id).style.display="none";
     }
     return true;
 }
