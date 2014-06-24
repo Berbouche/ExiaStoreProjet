@@ -22,7 +22,7 @@
                  $_SESSION['email']=$email;
                  $_SESSION['password']=$password;
                  echo '<p>Welcome, you are connected !</p>';
-                 header('http://localhost/ExiaStoreProjet');
+                 header('location: http://localhost/ExiaStoreProjet');
              }
              else
              {
@@ -36,3 +36,10 @@
         die('Erreur : '.$e->getMessage()); 
     }
 ?>
+
+<?php        
+session_start();  
+//session_destroy sert à detruire la session  
+session_destroy();  
+echo" Vous êtes  déconnecté";    
+?>      
