@@ -15,7 +15,7 @@
 				break;
 			
 			default:
-				# code...
+				include("View/catalogTest.php");
 				break;
 		}
 
@@ -33,7 +33,7 @@
 	//echo "coucou".dirname("View/header.php")."coucou";
 
 	include("View/catalogTest.php");
-	include("View/vitrine.php");
+	//include("View/vitrine.php");
 	}
 	include("View/footer.php");
 
