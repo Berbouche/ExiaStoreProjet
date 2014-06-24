@@ -15,4 +15,4 @@ function show_hide(id)
     return true;
 }
 
-show_hide('info');
+
