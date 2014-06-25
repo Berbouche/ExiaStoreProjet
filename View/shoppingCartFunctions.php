@@ -1,8 +1,9 @@
 <?php
 
-return $booleen;
+//return $booleen;
 
 function creationPanier(){
+    
    if (!isset($_SESSION['panier'])){
       $_SESSION['panier']=array();
       $_SESSION['panier']['libelleProduit'] = array();
@@ -10,43 +11,46 @@ function creationPanier(){
       $_SESSION['panier']['prixProduit'] = array();
       $_SESSION['panier']['verrou'] = false;
    }
+    
    return true;
 }
 
-//@param string $libelleProduit;
+//param string $libelleProduit;
 //@param int $qteProduit
 //@param float $prixProduit
 //@return void
 
-function ajouterArticle($libelleProduit,$qteProduit,$prixProduit)
+function ajouterArticle($libelleProduit,$qteProduit,$prixProduit){
 
 
 //si le panier existe
-if (creationPanier() && !isVerrouille())
-   {
+    if (creationPanier() && !isVerrouille())
+    {
       //Si le produit existe déjà on ajoute seulement la quantité
       $positionProduit = array_search($libelleProduit,  $_SESSION['panier']['libelleProduit']);
 
-      if ($positionProduit !== false)
-      {
-         $_SESSION['panier']['qteProduit'][$positionProduit] += $qteProduit ;
-      }
-      else
-      {
-         //Sinon on ajoute le produit
-         array_push( $_SESSION['panier']['libelleProduit'],$libelleProduit);
-         array_push( $_SESSION['panier']['qteProduit'],$qteProduit);
-         array_push( $_SESSION['panier']['prixProduit'],$prixProduit);
-      }
-   }
-   else
-   echo "Un problème est survenu veuillez contacter l'administrateur du site.";
-}
+        if ($positionProduit !== false)
+        {
+            $_SESSION['panier']['qteProduit'][$positionProduit] += $qteProduit ;
+        }
+        else
+        {
+            //Sinon on ajoute le produit
+            array_push( $_SESSION['panier']['libelleProduit'],$libelleProduit);
+            array_push( $_SESSION['panier']['qteProduit'],$qteProduit);
+            array_push( $_SESSION['panier']['prixProduit'],$prixProduit);
+        }
+    }
+    else
+    {
+        echo "Un problème est survenu veuillez contacter l'administrateur du site.";
+    }
 
+}
 //modifie la quantité d'un article
-@param $libelleProduit
-@param $qteProduit
-@return void
+//@param $libelleProduit
+//@param $qteProduit
+//@return void
 
 function modifierQTeArticle($libelleProduit,$qteProduit){
    //Si le panier éxiste
@@ -64,14 +68,18 @@ function modifierQTeArticle($libelleProduit,$qteProduit){
          }
       }
       else
-      supprimerArticle($libelleProduit);
+      {
+        supprimerArticle($libelleProduit);
+      }
    }
    else
-   echo "Un problème est survenu veuillez contacter l'administrateur du site.";
+   {
+        echo "Un problème est survenu veuillez contacter l'administrateur du site.";
+   }
 }
 
-@param $libelleProduit
-@return unknown_type
+//@param $libelleProduit
+//@return unknown_type
 
 function supprimerArticle($libelleProduit){
    //Si le panier existe
@@ -100,10 +108,12 @@ function supprimerArticle($libelleProduit){
       unset($tmp);
    }
    else
-   echo "Un problème est survenu veuillez contacter l'administrateur du site.";
+   {
+        echo "Un problème est survenu veuillez contacter l'administrateur du site.";
+   }
 }
 
-@return int
+//@return int
 
 function MontantGlobal(){
    $total=0;
@@ -114,31 +124,39 @@ function MontantGlobal(){
    return $total;
 }
 
-@return void
+//@return void
 
 function supprimePanier(){
    unset($_SESSION['panier']);
 }
 
 //ermet de savoir si le panier est verrouillé
-@return booleen
+//@return booleen
 
 function isVerrouille(){
    if (isset($_SESSION['panier']) && $_SESSION['panier']['verrou'])
-   return true;
+   {
+        return true;
+   }
    else
-   return false;
+   {
+        return false;
+   }
 }
 
-@return int
+//@return int
 
 function compterArticles()
 
 {
-if (isset ($_SESSION['panier']))
-return count($_SESSION['panier']['libelleProduit']);
-else
-return 0;
+    if (isset ($_SESSION['panier']))
+    {
+        return count($_SESSION['panier']['libelleProduit']);
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 
