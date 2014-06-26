@@ -1,20 +1,20 @@
-<div class="col-sm-3 col-md-2 sidebar">
-    <div class="row-fluid">
-    <div class="span3">
-  <ul class="nav nav-sidebar">
-    <li><a href="?page=catalog&id=1">Compact Disc</a>
-    	<ul class="nav navbar-collapse">
-    		<li class="active"><a href="">Classic</a></li>
-    		<li><a href="">Rock</a></li>
-    	</ul>
-    </li>
-    <li><a href="?page=catalog&id=2">DVD</a>
-    <ul class="nav navbar-collapse">
-    	<li><a href="">Thriller</a></li>
-    	<li><a href="">Animation</a></li>
-    </ul>
-    </li>
-  </ul>
-</div>
-</div>
+<div class="col-sm-1 col-md-1 sidebar" style="border:solid 2px;">
+	<div class="row-fluid">
+		<div class="span3">
+			<ul class="nav nav-sidebar">
+				<li><a href="CD">CD</a>
+					<!-- <ul class="nav navbar-collapse">
+						<li class="active"><a href="">Classic</a></li>
+						<li><a href="">Rock</a></li>
+					</ul> -->
+				</li>
+				<li><a href="DVD">DVD</a>
+					<!-- <ul class="nav navbar-collapse">
+						<li><a href="">Thriller</a></li>
+						<li><a href="">Animation</a></li>
+					</ul> -->
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>

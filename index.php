@@ -12,7 +12,7 @@
 	if (isset($_SESSION['email'])&&isset($_SESSION['password'])) {
 	 	?><script >
 	 		document.getElementById('logout').style.display = "block";
-	 		//document.getElementById('shoppingCart').style.display = "block";
+	 		document.getElementById('settings').style.display = "block";
 	 		document.getElementById('login').style.display = "none";
 	 		document.getElementById('manage').style.display = "block";
 	 	</script><?php
@@ -66,7 +66,7 @@
 				/*?><script type="text/javascript">document.getElementById('catalog').classList.add("active");</script><?php*/
 				include('View/menu.php');
 				if (isset($_GET['id'])) {
-					include("View/catalogTest.php");
+					include("Model/catalog.php");
 				}
 				break;
 
