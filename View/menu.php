@@ -1,4 +1,6 @@
-<div class="col-sm-3 col-md-2 sidebar">
+<div class="col-sm-3 col-md-2 sidebar" style="border:solid 2px;">
+    <div class="row-fluid">
+    <div class="span3">
   <ul class="nav nav-sidebar">
     <li><a href="?page=catalog&id=1">Compact Disc</a>
     	<ul class="nav navbar-collapse">
@@ -13,4 +15,6 @@
     </ul>
     </li>
   </ul>
+</div>
+</div>
 </div>
