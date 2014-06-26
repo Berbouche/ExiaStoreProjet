@@ -1,4 +1,7 @@
 <?php
+	// include("");
+	// session_name($sessname);
+	session_start();
 	include("View/header.php");
 	//include("View/menu.php");
 	if (isset($_GET['id'])) {
@@ -6,6 +9,16 @@
 			include ("Model/admin.php");
 		}
 	}
+	
+	if (isset($_SESSION['email'])&&isset($_SESSION['password'])) {
+	 	?><script >
+	 		document.getElementById('logout').style.display = "block";
+	 		document.getElementById('login').style.display = "none";
+	 	</script><?php
+	 }
+
+
+
 	if (isset($_GET['log'])) {
 		switch ($_GET['log']) {
 			case 'yes':

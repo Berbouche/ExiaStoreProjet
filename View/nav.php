@@ -30,7 +30,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Account<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li id="login"><a onclick="logintest()"><span class="glyphicon glyphicon-leaf"></span> Login</a></li>
-            <li id="logout"><a href="#"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+            <li id="logout"><a href="Model/login.php?log=logout"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Management</a></li>
           </ul>
         </li>

@@ -1,5 +1,11 @@
+
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
+
+#Options +FollowSymlinks
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+
 #RewriteRule . index.php [L]
-RewriteRule ^([^/]*)(.*)$ index.php?page=$1&patate=$2 [L,QSA]
+#RewriteRule ^([^/]*)(.*)$ index.php?page=$1&patate=$2 [L,QSA]
+#RewriteRule ^([a-z]+) index.php?page=$1
