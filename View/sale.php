@@ -1,7 +1,9 @@
-<div class="span7">
+ <div class="container">
 
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      
+      <div class="row show-grid">
+       
+        <div class="span7"><div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -14,7 +16,7 @@
     <div class="item active">
       <img src="View/image/cdPromo1.jpg" width="25%" height="25%">
       <div class="carousel-caption">
-        bombu
+        <p style="color: red;">Promo de la semaine !</p>
       </div>
     </div>
 
@@ -22,14 +24,14 @@
     <div class="item">
       <img src="View/image/cdPromo2.jpg" width="25%" height="25%">
       <div class="carousel-caption">
-        bombu
+        <p style="color: red;">Bon plan cadeau !</p>
       </div>
     </div>
 
     <div class="item">
       <img src="View/image/cdPromo3.png" width="25%" height="25%">
       <div class="carousel-caption">
-        bombu
+        <p style="color: red;">On sale !</p>
       </div>
     </div>
   </div>
@@ -44,3 +46,10 @@
 
   </div>
 </div>
+</div>  
+</div>
+      
+    
+
+    </div>
+    </div>
