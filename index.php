@@ -9,16 +9,12 @@
 			include ("Model/admin.php");
 		}
 	}
-	
 	if (isset($_SESSION['email'])&&isset($_SESSION['password'])) {
 	 	?><script >
 	 		document.getElementById('logout').style.display = "block";
 	 		document.getElementById('login').style.display = "none";
 	 	</script><?php
 	 }
-
-
-
 	if (isset($_GET['log'])) {
 		switch ($_GET['log']) {
 			case 'yes':
@@ -39,11 +35,6 @@
 			default:
 				echo "<script>alert('Error : ".$_GET['log']."')</script>";
 				break;
-		}
-
-		if ($_GET['log']=="yes") {
-		}elseif ($_GET['log']=="no") {
-		}elseif ($_GET['log']=="exit"){
 		}
 	}
 	// $link = "//$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; $escaped_link = htmlspecialchars($link, ENT_QUOTES, 'UTF-8'); echo '<a href="'.$escaped_link.'">'.$escaped_link.'</a>';
@@ -86,5 +77,6 @@
 	include("View/sale.php");
 	}
 	include("View/footer.php");
+	
 
 ?>
