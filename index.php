@@ -82,7 +82,7 @@
 				break;
 
 			default:
-				include("View/vitrine.php");
+				include("View/sale.php");
 				break;
 		}
 		/*if ($_GET['page']=="register") {

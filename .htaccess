@@ -3,9 +3,11 @@ RewriteEngine on
 
 #Options +FollowSymlinks
 
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
 
 #RewriteRule . index.php [L]
 #RewriteRule ^([^/]*)(.*)$ index.php?page=$1&patate=$2 [L,QSA]
-#RewriteRule ^([a-z]+) index.php?page=$1
+RewriteRule ^([a-z]+) index.php?page=$1
+RewriteRule ^(CD) index.php?page=catalog&id=1 [L]
+RewriteRule ^(DVD) index.php?page=catalog&id=2 [L]
