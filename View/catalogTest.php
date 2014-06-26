@@ -25,7 +25,7 @@ try {
         <p>Price : <?php echo (utf8_encode($line['PRICEHT'])) ?> $</p>
         <p>
 
-        <a href="#" class="btn btn-primary" role="button">Add to my ShopingCart</a>
+        <a href="javascript:creationPanier(); ajouterArticle($<?php echo (utf8_encode($line['REFERENCE'])) ?>, $<?php echo (utf8_encode($line['STOCK'])) ?>, $<?php echo (utf8_encode($line['PRICEHT']))); ?>" class="btn btn-primary" role="button">Add to my ShopingCart</a>
         <a id="info" onclick="javascript:show_hide('info<?php echo (utf8_encode($line['ID'])) ?>');" class="btn btn-default" role="button">More Info</a>
         <div id="info<?php echo (utf8_encode($line['ID'])) ?>" class="info<?php echo (utf8_encode($line['ID'])) ?>">
         <?php echo (utf8_encode($line['DESCRIBE'])) ?>

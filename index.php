@@ -16,6 +16,7 @@
 	 		document.getElementById('login').style.display = "none";
 	 		document.getElementById('manage').style.display = "block";
 	 	</script><?php
+
 	 }
 
 	 if (isset($_SESSION['admin'])){
