@@ -14,7 +14,9 @@
 	 		document.getElementById('logout').style.display = "block";
 	 		document.getElementById('settings').style.display = "block";
 	 		document.getElementById('login').style.display = "none";
+	 		document.getElementById('manage').style.display = "block";
 	 	</script><?php
+
 	 }
 
 	if (isset($_SESSION['admin'])){
@@ -79,6 +81,10 @@
 					?><script type="text/javascript">document.getElementById('Administration').classList.add('active');</script><?php
 				include("View/administration.php");
 				}
+				break;
+
+			case 'management':
+				include("View/management.php");
 				break;
 
 			default:

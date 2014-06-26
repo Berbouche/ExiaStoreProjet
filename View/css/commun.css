@@ -6,7 +6,7 @@
 	margin : 20px 20px 20px 20px;
 }
 
-#logout, #settings, #Administration{
+#logout, #settings, #Administration, #manage{
 	display: none;
 }
 
