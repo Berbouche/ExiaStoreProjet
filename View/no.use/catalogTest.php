@@ -1,5 +1,3 @@
-
-
 <?php
 try {
 		$pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;   
@@ -7,8 +5,8 @@ try {
 		$data = $bdd->query('SELECT * FROM article');
 		while ($line = $data->fetch()) {
 ?>
-				<!-- Debut de balise 1 -->
-				 <div class="container">
+<!-- Debut de balise 1 -->
+<div class="container">
 <div class="row">
 	<div class="col-sm-6 col-md-3">
 		<div class="thumbnail">
