@@ -1,5 +1,4 @@
 <?php?>
-
 <form id="formAdmin" method="post" action="http://localhost/ExiaStoreProjet/Model/addProdAdmin.php">
     <label for="reference"><br>Reference :</label>
     <input type="text" name="reference" id="reference" /><br/>

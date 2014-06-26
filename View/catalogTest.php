@@ -1,5 +1,4 @@
-<div class="panel-group" id="accordion">
-<!-- Debut du Catalogue -->
+
 
 <?php
 try {
@@ -12,21 +11,13 @@ try {
 
 ?>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo (utf8_encode($line['ID'])) ?>">
-          <?php echo (utf8_encode($line['NAME'])) ?>
-        </a>
-      </h4>
-    </div>
-    <div id="collapse<?php echo (utf8_encode($line['ID'])) ?>" class="panel-collapse collapse in">
-      <div class="panel-body">
+
 
 
         <!-- Debut de balise 1 -->
+         <div class="container">
 <div class="row">
-  <div class="col-sm-6 col-md-4">
+  <div class="col-sm-6 col-md-3">
     <div class="thumbnail">
       <img src="View/image/compile.jpg" alt="compile">
       <div class="caption">
@@ -45,11 +36,12 @@ try {
     </div>
   </div>
 </div>
+ </div><!--/span-->
       <!-- Fin de balise 1 -->
 
-      </div>
-    </div>
-  </div>
+
+
+     
   
    <?php 
     }
