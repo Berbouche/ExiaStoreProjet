@@ -1,11 +1,11 @@
 <?php?>
 
-<form id="formAdmin" method="post" action="Model/addProdAdmin.php">
+<form id="formAdmin" method="post" action="http://localhost/ExiaStoreProjet/Model/addProdAdmin.php">
     <label for="reference"><br>Reference :</label>
     <input type="text" name="reference" id="reference" /><br/>
     
     <label for="idkindarticle"><br>Type :</label>
-    <select name="type" id="idkindarticle">
+    <select name="idkindarticle" id="idkindarticle">
         <option value="CD">CD</option>
         <option value="DVD">DVD</option>
     </select><br/>
@@ -33,6 +33,9 @@
     
     <label for="threshold"><br>Threshold :</label>
     <input type="number" name="threshold" id="threshold"/><br/>
+    
+    <input type="hidden" name="idstatearticle" value="1"/>
+    <input type="hidden" name="idtva" value="1"/>
     
     <input type="submit" value="Register" class="auto-style1" style="width: 90px" />
 </form>

@@ -6,6 +6,9 @@
         
         $reference = $_POST["reference"];
         $name = $_POST["name"];
+        $idstatearticle= $_POST["idstatearticle"];
+        $idtva= $_POST["idtva"];
+        $idkindarticle = $_POST["idkindarticle"];
         $priceht = $_POST["priceht"];
         $describe = $_POST["describe"];
         $stock = $_POST["stock"];
@@ -14,8 +17,22 @@
         $recordlabel_studio = $_POST["recordlabel_studio"];
         $threshold = $_POST["threshold"];
         
+        
+        switch($_POST["idkindarticle"]){
+            case'CD':
+                $idkindarticle =1;
+            break;
+            case'DVD':
+                $idkindarticle =2;
+            break;
+            
+            default:
+            
+            break;
+        }
+            
         $table ="article";
-        $sql= "INSERT INTO".$table. "(reference, name, priceht, describe, stock, realisedate, artist_realisator, recordlabel_studio, threshold) VALUES('".$reference."', '".$name."', '".$priceht"','".$describe"','".$stock"','".$realisedate."','"artist_realisator"','"recordlabel_studio"','"threshold"')";
+        $sql= "INSERT INTO ".$table. " (reference, name, idtva, idkindarticle, idstatearticle, priceht, `describe`, stock, realisedate, artist_realisator, recordlabel_studio, threshold) VALUES('".$reference."', '".$name."','".$idtva."','".$idkindarticle."','".$idstatearticle."','".$priceht."','".$describe."','".$stock."','".$realisedate."','".$artist_realisator."','".$recordlabel_studio."','".$threshold."')";
         
         print_r($bdd);
         print_r($sql);
