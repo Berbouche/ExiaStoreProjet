@@ -7,7 +7,7 @@
 			$bdd = new PDO('mysql:host=localhost;dbname=projetweb','root','',$pdo_options);
 			$data = $bdd->query('SELECT * FROM article WHERE idKindArticle ="'.$_GET['id'].'"');
 	        
-			echo "<table><tr><th>REFERENCE</th><th>NAME</th><th>PRICEHT</th><th>DESCRIBE</th><th>STOCK</th><th>REALISEDATE</th><th>ARTIST_REALISATOR</th><th>RECORDLABEL_STUDIO</th></tr>";
+			echo "<table><th><td>REFERENCE</td><td>NAME</td><td>PRICEHT</td><td>DESCRIBE</td><td>STOCK</td><td>REALISEDATE</td><td>ARTIST_REALISATOR</td><td>RECORDLABEL_STUDIO</td></th>";
 			while ($line = $data->fetch()) {
 				echo "<tr><td>".utf8_encode($line['REFERENCE'])."</td><td>".utf8_encode($line['NAME'])."</td><td>".utf8_encode($line['PRICEHT'])."</td><td>".utf8_encode($line['DESCRIBE'])."</td><td>".utf8_encode($line['STOCK'])."</td><td>".utf8_encode($line['REALISEDATE'])."</td><td>".utf8_encode($line['ARTIST_REALISATOR'])."</td><td>".utf8_encode($line['RECORDLABEL_STUDIO'])."</td></tr>";
 			}

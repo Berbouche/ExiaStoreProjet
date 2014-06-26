@@ -9,3 +9,11 @@ margin : 20px 20px 20px 20px;
 #logout{
 	display: none;
 }
+ table,th{
+ 	border: 1px solid black;
+ 	border-collapse: collapse;
+ }
+
+ th,td{
+ 	padding: 15px;
+ }

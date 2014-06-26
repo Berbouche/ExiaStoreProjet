@@ -46,12 +46,11 @@
 				break;
 			
 			case 'catalog' :
-				?>
-				<script type="text/javascript">
-					document.getElementById('catalog').classList.add("active");
-				</script>
-				<?php
-				include("View/catalogTest.php");
+				/*?><script type="text/javascript">document.getElementById('catalog').classList.add("active");</script><?php*/
+				include('View/menu.php');
+				if (isset($_GET['id'])) {
+					include("Model/catalog.php");
+				}
 				break;
 
 			case 'cart':

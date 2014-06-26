@@ -13,7 +13,7 @@
         print_r($sql);
         $pre = $bdd->prepare($sql);
         $pre->execute();
-        }catch (PDOException $e){
+    }catch (PDOException $e){
         die('Erreur : '.$e->getMessage());
         header("../?log=fail")
     }
