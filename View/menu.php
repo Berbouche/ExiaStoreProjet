@@ -1,4 +1,4 @@
-<div class="col-sm-3 col-md-2 sidebar" style="border:solid 2px;">
+<div class="col-sm-3 col-md-2 sidebar">
     <div class="row-fluid">
     <div class="span3">
   <ul class="nav nav-sidebar">
