@@ -23,6 +23,8 @@
             <li role="presentation"><a role="menuitem" tabindex="-1" href="">Other goodies</a></li>
           </ul>
         </li>
+
+         <li id="Administration"><a href="?page=administration"><span class="glyphicon glyphicon-tower">Administration</span></a></li>
 		  </ul>
 
       <ul class="nav navbar-nav navbar-right">
