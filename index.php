@@ -76,6 +76,4 @@
 	include("View/sale.php");
 	}
 	include("View/footer.php");
-	
-
 ?>
