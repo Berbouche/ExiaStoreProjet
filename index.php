@@ -15,6 +15,14 @@
 	 		document.getElementById('login').style.display = "none";
 	 	</script><?php
 	 }
+
+	 if (isset($_SESSION['admin'])){
+		?><script>
+		document.getElementById('Administration').style.display = "block";
+		</script>
+		<?php
+}
+
 	if (isset($_GET['log'])) {
 		switch ($_GET['log']) {
 			case 'yes':
@@ -57,6 +65,13 @@
 			case 'cart':
 				?><script type="text/javascript">document.getElementById('shoppingCart').classList.add('active');</script><?php
 				include("View/shoppingCart.php");
+				break;
+
+			case 'administration':
+				if(isset($_SESSION['admin']))
+				{
+				include("View/administration.php");
+				}
 				break;
 
 			default:

@@ -13,7 +13,7 @@
              mysql_select_db("projetweb");
              $email = $_POST['email'];
              $password = $_POST['password'];
-             $r = mysql_query('SELECT password, email FROM member WHERE email = "'.$email.'"')
+             $r = mysql_query('SELECT password, email,idautorization FROM member WHERE email = "'.$email.'"')
              or die (mysql_error());
              $d= mysql_fetch_assoc($r);
              
@@ -25,6 +25,12 @@
                 $_SESSION['password']=$password;
                 $NumSession = session_id();
                 //session_register("NumSession");
+
+				if($d['idautorization'] == '1')
+				{
+					$_SESSION['admin'] = $d['idautorization'];
+				}
+
                 header('Location: http://localhost/ExiaStoreProjet/?log=yes');
              }
              else

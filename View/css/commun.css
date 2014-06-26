@@ -9,3 +9,7 @@ margin : 20px 20px 20px 20px;
 #logout{
 	display: none;
 }
+
+#Administration{
+	display : none;
+}
