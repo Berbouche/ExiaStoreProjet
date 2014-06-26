@@ -14,6 +14,7 @@
 	 		document.getElementById('logout').style.display = "block";
 	 		//document.getElementById('shoppingCart').style.display = "block";
 	 		document.getElementById('login').style.display = "none";
+	 		document.getElementById('manage').style.display = "block";
 	 	</script><?php
 	 }
 
@@ -79,6 +80,10 @@
 					?><script type="text/javascript">document.getElementById('Administration').classList.add('active');</script><?php
 				include("View/administration.php");
 				}
+				break;
+
+			case 'management':
+				include("View/management.php");
 				break;
 
 			default:

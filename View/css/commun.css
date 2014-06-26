@@ -14,6 +14,10 @@ margin : 20px 20px 20px 20px;
 	display : none;
 }
 
+#manage{
+	display : none;
+}
+
 table,th{
 	border: 1px solid black;
 	border-collapse: collapse;
