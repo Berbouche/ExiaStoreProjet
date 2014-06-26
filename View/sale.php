@@ -16,7 +16,7 @@
     <div class="item active">
       <img src="View/image/cdPromo1.jpg" width="25%" height="25%">
       <div class="carousel-caption">
-        <p style="color: red;">Promo de la semaine !</p>
+        <p style="color: red;">Weekly sales !</p>
       </div>
     </div>
 
@@ -24,14 +24,14 @@
     <div class="item">
       <img src="View/image/cdPromo2.jpg" width="25%" height="25%">
       <div class="carousel-caption">
-        <p style="color: red;">Bon plan cadeau !</p>
+        <p style="color: red;">Good gift !</p>
       </div>
     </div>
 
     <div class="item">
       <img src="View/image/cdPromo3.png" width="25%" height="25%">
       <div class="carousel-caption">
-        <p style="color: red;">On sale !</p>
+        <p style="color: red;">Music start here !</p>
       </div>
     </div>
   </div>
