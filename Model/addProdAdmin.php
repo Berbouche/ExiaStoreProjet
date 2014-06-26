@@ -1,9 +1,7 @@
 <?php
-
     try{
         $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;		
 		$bdd = new PDO('mysql:host=localhost;dbname=projetweb','root','',$pdo_options);
-        
         $reference = $_POST["reference"];
         $name = $_POST["name"];
         $idstatearticle= $_POST["idstatearticle"];
@@ -16,8 +14,6 @@
         $artist_realisator = $_POST["artist_realisator"];
         $recordlabel_studio = $_POST["recordlabel_studio"];
         $threshold = $_POST["threshold"];
-        
-        
         switch($_POST["idkindarticle"]){
             case'CD':
                 $idkindarticle =1;
@@ -25,23 +21,19 @@
             case'DVD':
                 $idkindarticle =2;
             break;
-            
             default:
-            
             break;
-        }
-            
+        } 
         $table ="article";
         $sql= "INSERT INTO ".$table. " (reference, name, idtva, idkindarticle, idstatearticle, priceht, `describe`, stock, realisedate, artist_realisator, recordlabel_studio, threshold) VALUES('".$reference."', '".$name."','".$idtva."','".$idkindarticle."','".$idstatearticle."','".$priceht."','".$describe."','".$stock."','".$realisedate."','".$artist_realisator."','".$recordlabel_studio."','".$threshold."')";
-        
+        header("Location: http://localhost/ExiaStoreProjet/index.php?page=administration&stat=yes");
         print_r($bdd);
         print_r($sql);
         $pre = $bdd->prepare($sql);
-        $pre->execute();    
-        
+        $pre->execute();     
     }
     catch (PDOException $e){
+        header("Location: http://localhost/ExiaStoreProjet/administration?log=".$e->getMessage());
         die('Erreur : '.$e->getMessage());
     }
-    
 ?>

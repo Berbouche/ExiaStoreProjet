@@ -17,12 +17,12 @@
 	 	</script><?php
 	 }
 
-	 if (isset($_SESSION['admin'])){
-		?><script>
-		document.getElementById('Administration').style.display = "block";
-		</script>
-		<?php
-}
+	if (isset($_SESSION['admin'])){
+		?><script>document.getElementById('Administration').style.display = "block";</script><?php
+		if (isset($_GET['stat'])) {
+			echo '<ul class="list-group"><li class="list-group-item list-group-item-success">New article add</li></ul>';
+		}
+	}
 
 	if (isset($_GET['log'])) {
 		switch ($_GET['log']) {

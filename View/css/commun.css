@@ -6,12 +6,8 @@
 	margin : 20px 20px 20px 20px;
 }
 
-#logout, #settings{
+#logout, #settings, #Administration{
 	display: none;
-}
-
-#Administration{
-	display : none;
 }
 
 table,th{
@@ -21,4 +17,10 @@ table,th{
 
 th,td{
 	padding: 15px;
+}
+
+footer{
+	margin: 0 auto;
+	display: block;
+	width: 100%;
 }

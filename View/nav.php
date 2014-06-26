@@ -11,7 +11,7 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="dropdown"><a id="drop1" role="button" class="dropdown-toggle" data-toggle="dropdown">Catalog <b class="caret"></b></a>
+        <li class="dropdown"><a id="drop1" role="button" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list-alt"></span> Catalog <b class="caret"></b></a>
           <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
             <li role="presentation"><a role="menuitem" tabindex="-1" href='CD'>CD</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href='DVD'>DVD</a></li>
@@ -20,7 +20,7 @@
           </ul>
         </li>
         <li id="shoppingCart"><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
-        <li id="Administration"><a href="?page=administration"><span class="glyphicon glyphicon-tower"></span>Administration</a></li>
+        <li id="Administration"><a href="administration"><span class="glyphicon glyphicon-tower"></span>Administration</a></li>
 		  </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">

@@ -1,0 +1,1 @@
+<!-- DELETE FROM `projetweb`.`article` WHERE `article`.`ID` = 5 LIMIT 1; -->
