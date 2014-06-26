@@ -12,6 +12,7 @@
 	if (isset($_SESSION['email'])&&isset($_SESSION['password'])) {
 	 	?><script >
 	 		document.getElementById('logout').style.display = "block";
+	 		document.getElementById('shoppingCart').style.display = "block";
 	 		document.getElementById('login').style.display = "none";
 	 	</script><?php
 	 }
@@ -74,8 +75,8 @@
 				break;
 
 			case 'administration':
-				if(isset($_SESSION['admin']))
-				{
+				if(isset($_SESSION['admin'])){
+					?><script type="text/javascript">document.getElementById('Administration').classList.add('active');</script><?php
 				include("View/administration.php");
 				}
 				break;
