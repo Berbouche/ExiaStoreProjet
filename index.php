@@ -12,7 +12,7 @@
 	if (isset($_SESSION['email'])&&isset($_SESSION['password'])) {
 	 	?><script >
 	 		document.getElementById('logout').style.display = "block";
-	 		document.getElementById('shoppingCart').style.display = "block";
+	 		//document.getElementById('shoppingCart').style.display = "block";
 	 		document.getElementById('login').style.display = "none";
 	 	</script><?php
 	 }
