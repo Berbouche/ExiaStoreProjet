@@ -5,6 +5,7 @@
         session_start();
         if (empty ($_POST['email']) && empty ($_POST['password']))
            {
+                header("Location: http://localhost/ExiaStoreProjet/?log=enter");
                echo "the nickname and the password should be entered";
            }
            else
@@ -35,11 +36,14 @@
              }
              else
              {
-                header('Location: http://localhost/ExiaStoreProjet/?log=fail');
+                header('Location: http://localhost/ExiaStoreProjet/?log=wrong');
              }
            } 
         } catch (PDOException $e){
-        die('Erreur : '.$e->getMessage()); 
+            die('Erreur : '.$e->getMessage());
+            header('Location: http://localhost/ExiaStoreProjet/?log='.$e->getMessage());
+
+
     }
 ?>
 

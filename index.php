@@ -37,8 +37,15 @@
 			case 'exit':
 			echo '<ul class="list-group"><li class="list-group-item list-group-item-success">You are now log out</li></ul>';
 				break;
+			case 'enter':
+				echo '<ul class="list-group"><li class="list-group-item list-group-item-danger">You need to enter email and password</li></ul>';
+				break;
 			case 'fail':
-			echo '<ul class="list-group"><li class="list-group-item list-group-item-danger">OOOoooops! log in fail...</li></ul>';
+				echo '<ul class="list-group"><li class="list-group-item list-group-item-danger">OOOoooops! log in fail...</li></ul>';
+				break;
+			case 'wrong':
+				echo '<ul class="list-group"><li class="list-group-item list-group-item-danger">Wrong email or password...</li></ul>';
+				echo "<script>logintest();</script>";
 				break;
 			default:
 				echo "<script>alert('Error : ".$_GET['log']."')</script>";
