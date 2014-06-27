@@ -15,7 +15,7 @@
         $pre->execute();
     }catch (PDOException $e){
         die('Erreur : '.$e->getMessage());
-        header("../?log=fail")
+        header("../?log=fail");
     }
     header("../?log=yes2")
 ?>
