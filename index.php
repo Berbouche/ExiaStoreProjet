@@ -12,9 +12,9 @@
 	if (isset($_SESSION['email'])&&isset($_SESSION['password'])) {
 	 	?><script >
 	 		document.getElementById('logout').style.display = "block";
-	 		document.getElementById('settings').style.display = "block";
+	 		//document.getElementById('settings').style.display = "block";
 	 		document.getElementById('login').style.display = "none";
-	 		document.getElementById('manage').style.display = "block";
+	 		//document.getElementById('manage').style.display = "block";
 	 	</script><?php
 
 	 }

@@ -19,8 +19,8 @@
             <li role="presentation"><a role="menuitem" tabindex="-1" href="">Other goodies</a></li>
           </ul>
         </li>
-        <li id="shoppingCart"><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
-        <li id="Administration"><a href="administration"><span class="glyphicon glyphicon-tower"></span>Administration</a></li>
+        <li id="shoppingCart"><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li id="Administration"><a href="administration"><span class="glyphicon glyphicon-tower"></span> Administration</a></li>
 		  </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -28,7 +28,7 @@
           <ul class="dropdown-menu">
             <li id="login"><a onclick="logintest()"><span class="glyphicon glyphicon-leaf"></span> Login</a></li>
             <li id="logout"><a href="Model/login.php?log=logout"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
-            <li id="manage"><a href="?page=management"><span class="glyphicon glyphicon-cog"></span> Management</a></li>
+            <li id="settings" hidden="true"><a href="management"><span class="glyphicon glyphicon-cog"></span> Account Settings</a></li>
 
           </ul>
         </li>
